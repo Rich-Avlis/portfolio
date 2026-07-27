@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Billion Dreams';
+    src: url('./assets/fonts/BillionDreams_PERSONAL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +42,7 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 60px;
-    color: #1a1a2e;
+    color: #0a1a12;
     position: relative;
 }
 
@@ -43,7 +51,7 @@ body {
     display: block;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #0f3460, #00b4d8);
+    background: linear-gradient(90deg, #0d4f3b, #10b981);
     margin: 12px auto 0;
     border-radius: 2px;
 }
@@ -54,7 +62,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(26, 26, 46, 0.95);
+    background: rgba(10, 26, 18, 0.95);
     backdrop-filter: blur(10px);
     transition: all 0.3s;
 }
@@ -72,8 +80,15 @@ body {
 .nav-logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #00b4d8;
+    color: #10b981;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 64px;
+    width: auto;
 }
 
 .nav-menu {
@@ -98,12 +113,12 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #00b4d8;
+    background: #10b981;
     transition: width 0.3s;
 }
 
 .nav-link:hover {
-    color: #00b4d8;
+    color: #10b981;
 }
 
 .nav-link:hover::after {
@@ -134,7 +149,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(rgba(10, 26, 18, 0.6), rgba(10, 26, 18, 0.6)), url('assets/images/fondo.jpg') center/cover no-repeat;
     position: relative;
     overflow: hidden;
 }
@@ -142,8 +157,8 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(0, 180, 216, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(15, 52, 96, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(13, 79, 59, 0.1) 0%, transparent 50%);
 }
 
 .hero-split {
@@ -153,10 +168,14 @@ body {
     gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 40px 40px;
     text-align: left;
     z-index: 1;
     position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 24px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero-photo-side {
@@ -180,26 +199,36 @@ body {
 }
 
 .hero-title {
-    font-size: 4.2rem;
-    font-weight: 800;
+    font-size: 5.5rem;
+    font-weight: normal;
     margin-bottom: 14px;
-    background: linear-gradient(135deg, #fff, #00b4d8);
+    padding-top: 15px;
+    background: linear-gradient(135deg, #fff, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.1;
+    font-family: 'Great Vibes', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-subtitle {
     font-size: 1.35rem;
-    color: #a8d8ea;
+    color: #a7f3d0;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-tags {
     font-size: 1.05rem;
-    color: #6c8eb2;
+    color: #6ee7b7;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-links {
@@ -224,8 +253,8 @@ body {
 }
 
 .hero-link:hover {
-    background: #00b4d8;
-    border-color: #00b4d8;
+    background: #10b981;
+    border-color: #10b981;
     transform: translateY(-3px);
 }
 
@@ -235,10 +264,11 @@ body {
     gap: 8px;
     padding: 14px 32px;
     border-radius: 50px;
-    background: linear-gradient(135deg, #00b4d8, #0f3460);
+    background: linear-gradient(135deg, #10b981, #0d4f3b);
     color: #fff;
-    text-decoration: none;
     font-weight: 600;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
     transition: all 0.3s;
     border: none;
     font-size: 1rem;
@@ -246,7 +276,7 @@ body {
 
 .hero-cta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
 }
 
 /* About */
@@ -278,7 +308,7 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #0f3460, #00b4d8);
+    background: linear-gradient(135deg, #0d4f3b, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -331,7 +361,7 @@ body {
 .exp-panel:hover {
     transform: translateY(-5px);
     box-shadow: 0 14px 40px rgba(0,0,0,0.1);
-    border-color: #0f3460;
+    border-color: #0d4f3b;
 }
 
 .exp-panel-img {
@@ -358,8 +388,8 @@ body {
     display: inline-block;
     font-size: 0.65rem;
     font-weight: 700;
-    color: #0f3460;
-    background: rgba(15, 52, 96, 0.07);
+    color: #0d4f3b;
+    background: rgba(13, 79, 59, 0.07);
     padding: 4px 12px;
     border-radius: 20px;
     letter-spacing: 0.5px;
@@ -369,13 +399,13 @@ body {
 .exp-panel-body h3 {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: #0a1a12;
     margin-bottom: 3px;
 }
 
 .exp-panel-body h4 {
     font-size: 0.82rem;
-    color: #0f3460;
+    color: #0d4f3b;
     font-weight: 500;
     margin-bottom: 12px;
     line-height: 1.4;
@@ -406,8 +436,8 @@ body {
 .exp-panel-result {
     font-size: 0.75rem;
     font-weight: 700;
-    color: #00b4d8;
-    background: rgba(0, 180, 216, 0.08);
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
     padding: 4px 12px;
     border-radius: 20px;
 }
@@ -453,7 +483,7 @@ body {
 .edu-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    border-color: #00b4d8;
+    border-color: #10b981;
 }
 
 .edu-icon {
@@ -461,7 +491,7 @@ body {
     height: 55px;
     margin: 0 auto 15px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #0f3460, #00b4d8);
+    background: linear-gradient(135deg, #0d4f3b, #10b981);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,13 +501,13 @@ body {
 
 .edu-card h3 {
     font-size: 1.1rem;
-    color: #1a1a2e;
+    color: #0a1a12;
     margin-bottom: 8px;
 }
 
 .edu-institution {
     font-size: 0.85rem;
-    color: #00b4d8;
+    color: #10b981;
     font-weight: 500;
     margin-bottom: 6px;
 }
@@ -503,13 +533,13 @@ body {
 }
 
 .skill-category:hover {
-    border-color: #00b4d8;
+    border-color: #10b981;
     box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .skill-category h3 {
     font-size: 1.05rem;
-    color: #1a1a2e;
+    color: #0a1a12;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -517,7 +547,7 @@ body {
 }
 
 .skill-category h3 i {
-    color: #00b4d8;
+    color: #10b981;
 }
 
 .skill-category ul {
@@ -536,7 +566,7 @@ body {
     content: '▸';
     position: absolute;
     left: 0;
-    color: #00b4d8;
+    color: #10b981;
 }
 
 /* Certificates Panels */
@@ -587,7 +617,7 @@ body {
 .cert-track .cert-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.1);
-    border-color: #0f3460;
+    border-color: #0d4f3b;
 }
 
 .cert-logo-wrap {
@@ -614,8 +644,8 @@ body {
     display: inline-block;
     font-size: 0.65rem;
     font-weight: 600;
-    color: #0f3460;
-    background: rgba(15, 52, 96, 0.08);
+    color: #0d4f3b;
+    background: rgba(13, 79, 59, 0.08);
     padding: 4px 10px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -625,7 +655,7 @@ body {
 
 .cert-body h3 {
     font-size: 0.85rem;
-    color: #1a1a2e;
+    color: #0a1a12;
     line-height: 1.3;
     font-weight: 700;
     letter-spacing: 0.3px;
@@ -734,7 +764,7 @@ body {
 
 .contact-card i {
     font-size: 2rem;
-    color: #0f3460;
+    color: #0d4f3b;
     margin-bottom: 12px;
 }
 
@@ -752,7 +782,7 @@ body {
 }
 
 .contact-card a:hover {
-    color: #00b4d8;
+    color: #10b981;
 }
 
 .contact-ref {
@@ -764,7 +794,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #1a1a2e;
+    background: #0a1a12;
     color: #888;
     padding: 30px 0;
     text-align: center;
@@ -788,7 +818,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #00b4d8;
+    color: #10b981;
 }
 
 /* Responsive */
@@ -799,7 +829,7 @@ body {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: rgba(26, 26, 46, 0.98);
+        background: rgba(10, 26, 18, 0.98);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -832,6 +862,7 @@ body {
 
     .hero-title {
         font-size: 2.8rem;
+        padding-top: 10px;
     }
 
     .hero-subtitle {
