@@ -197,9 +197,9 @@ body {
     flex: 1;
     min-width: 0;
 }
-
 .hero-title {
-    font-size: 5.5rem;
+    font-size: 6rem;
+
     font-weight: normal;
     margin-bottom: 14px;
     padding-top: 15px;
@@ -208,11 +208,11 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.1;
-    font-family: 'Great Vibes', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Staatliches', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-subtitle {
-    font-size: 1.35rem;
+    font-size: 1.30rem;
     color: #a7f3d0;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -222,7 +222,7 @@ body {
 }
 
 .hero-tags {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #6ee7b7;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -861,16 +861,16 @@ body {
     }
 
     .hero-title {
-        font-size: 3.8rem;
+        font-size: 4.8rem;
         padding-top: 10px;
     }
 
     .hero-subtitle {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .hero-tags {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .section {
@@ -924,15 +924,15 @@ body {
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.8rem;
     }
 
     .hero-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .hero-tags {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .cert-grid {
