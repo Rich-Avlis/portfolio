@@ -180,36 +180,37 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     background: linear-gradient(135deg, #fff, #00b4d8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 1.1;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     color: #a8d8ea;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .hero-tags {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: #6c8eb2;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .hero-links {
     display: flex;
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .hero-link {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: rgba(255,255,255,0.08);
     display: flex;
@@ -830,7 +831,11 @@ body {
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
     }
 
     .hero-subtitle {
