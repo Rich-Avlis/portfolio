@@ -278,55 +278,43 @@ body {
 }
 
 /* About */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.about-card {
-    background: #380F17;
-    border: 1px solid rgba(239, 223, 197, 0.08);
-    padding: 36px;
-    border-radius: 0;
-}
-
-.about-card-full {
-    grid-column: 1 / -1;
-    background: #380F17;
-    border: 1px solid rgba(239, 223, 197, 0.08);
-    padding: 36px;
-    border-radius: 0;
-}
-
-.about-card p {
+.about-content p {
     font-size: 0.92rem;
     color: rgba(232, 228, 218, 0.7);
     line-height: 1.7;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-weight: 300;
 }
 
-.about-card p:last-child {
+.about-content p:last-of-type {
     margin-bottom: 0;
 }
 
-.about-card strong {
-    color: #8F0B13;
+.about-content strong {
+    color: #EFDFC5;
     font-weight: 500;
 }
 
 .about-stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .stat {
     text-align: center;
-    padding: 24px 12px;
-    border: 1px solid rgba(239, 223, 197, 0.08);
-    background: #252B2B;
+    padding: 20px 28px;
+    border: 1px solid rgba(143, 11, 19, 0.15);
+    background: #380F17;
+    min-width: 120px;
 }
 
 .stat-num {
@@ -341,7 +329,7 @@ body {
 
 .stat-label {
     font-size: 0.7rem;
-    color: rgba(232, 228, 218, 0.5);
+    color: rgba(239, 223, 197, 0.5);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
@@ -830,14 +818,6 @@ body {
         padding: 70px 0;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .skills-grid,
     .edu-grid,
     .contact-cards {
@@ -875,7 +855,4 @@ body {
         font-size: 2.4rem;
     }
 
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
