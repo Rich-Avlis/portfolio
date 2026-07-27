@@ -12,14 +12,14 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #EFDFC5;
-    color: #4C4F54;
+    background: #C6C6D0;
+    color: #104C64;
     line-height: 1.6;
 }
 
 ::selection {
     background: rgba(143, 11, 19, 0.15);
-    color: #380F17;
+    color: #C0754D;
 }
 
 /* Navbar */
@@ -28,9 +28,9 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(239, 223, 197, 0.92);
+    background: rgba(198, 198, 208, 0.92);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(56, 15, 23, 0.1);
+    border-bottom: 1px solid rgba(192, 117, 77, 0.15);
 }
 
 .nav-container {
@@ -47,7 +47,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #380F17;
+    color: #C0754D;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-link {
-    color: #4C4F54;
+    color: #104C64;
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
@@ -76,12 +76,12 @@ body {
     left: 0;
     width: 0;
     height: 1px;
-    background: #8F0B13;
+    background: #B6410F;
     transition: width 0.3s;
 }
 
 .nav-link:hover {
-    color: #8F0B13;
+    color: #B6410F;
 }
 
 .nav-link:hover::after {
@@ -102,7 +102,7 @@ body {
     display: block;
     width: 24px;
     height: 1.5px;
-    background: #4C4F54;
+    background: #104C64;
     transition: 0.3s;
 }
 
@@ -112,7 +112,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #252B2B;
+    background: #104C64;
     position: relative;
     overflow: hidden;
 }
@@ -140,20 +140,20 @@ body {
     height: 100px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 2px solid rgba(239, 223, 197, 0.25);
+    border: 2px solid rgba(198, 198, 208, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
-    color: #EFDFC5;
-    background: rgba(239, 223, 197, 0.06);
+    color: #C6C6D0;
+    background: rgba(198, 198, 208, 0.1);
 }
 
 .hero-label {
     font-family: 'Inter', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
-    color: #8F0B13;
+    color: #D59D80;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -163,7 +163,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 5.5rem;
     font-weight: 700;
-    color: #EFDFC5;
+    color: #C6C6D0;
     margin-bottom: 8px;
     line-height: 1.05;
     letter-spacing: -1px;
@@ -172,14 +172,14 @@ body {
 .hero-subtitle {
     font-size: 1rem;
     font-weight: 300;
-    color: rgba(239, 223, 197, 0.6);
+    color: rgba(198, 198, 208, 0.6);
     margin-bottom: 6px;
     letter-spacing: 2px;
 }
 
 .hero-tags {
     font-size: 0.85rem;
-    color: #8F0B13;
+    color: #B6410F;
     margin-bottom: 32px;
     letter-spacing: 1px;
 }
@@ -187,7 +187,7 @@ body {
 .hero-divider {
     width: 60px;
     height: 1px;
-    background: rgba(239, 223, 197, 0.2);
+    background: rgba(198, 198, 208, 0.2);
     margin: 0 auto 28px;
 }
 
@@ -202,19 +202,19 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 1px solid rgba(239, 223, 197, 0.15);
+    border: 1px solid rgba(198, 198, 208, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(239, 223, 197, 0.5);
+    color: rgba(198, 198, 208, 0.5);
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.3s;
 }
 
 .hero-link:hover {
-    border-color: #8F0B13;
-    color: #8F0B13;
+    border-color: #B6410F;
+    color: #B6410F;
     transform: translateY(-3px);
 }
 
@@ -223,8 +223,8 @@ body {
     align-items: center;
     gap: 8px;
     padding: 12px 32px;
-    border: 1px solid rgba(239, 223, 197, 0.2);
-    color: rgba(239, 223, 197, 0.8);
+    border: 1px solid rgba(198, 198, 208, 0.2);
+    color: rgba(198, 198, 208, 0.8);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
@@ -234,14 +234,14 @@ body {
 }
 
 .hero-cta:hover {
-    border-color: #8F0B13;
-    color: #8F0B13;
+    border-color: #B6410F;
+    color: #B6410F;
 }
 
 /* Section base */
 .section {
     padding: 100px 0;
-    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
+    border-bottom: 1px solid rgba(192, 117, 77, 0.1);
 }
 
 .container {
@@ -258,7 +258,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
-    color: #8F0B13;
+    color: #D59D80;
     letter-spacing: 4px;
     display: block;
     margin-bottom: 6px;
@@ -268,13 +268,13 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 2.8rem;
     font-weight: 600;
-    color: #380F17;
+    color: #C0754D;
     letter-spacing: -0.5px;
     line-height: 1.1;
 }
 
 .section-title-acc {
-    color: #8F0B13;
+    color: #B6410F;
 }
 
 /* About */
@@ -286,7 +286,7 @@ body {
 
 .about-content p {
     font-size: 0.92rem;
-    color: #4C4F54;
+    color: #104C64;
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 300;
@@ -297,7 +297,7 @@ body {
 }
 
 .about-content strong {
-    color: #380F17;
+    color: #D59D80;
     font-weight: 500;
 }
 
@@ -312,8 +312,8 @@ body {
 .stat {
     text-align: center;
     padding: 20px 28px;
-    border: 1px solid rgba(56, 15, 23, 0.12);
-    background: #EFDFC5;
+    border: 1px solid rgba(192, 117, 77, 0.15);
+    background: #C6C6D0;
     min-width: 120px;
 }
 
@@ -322,14 +322,14 @@ body {
     display: block;
     font-size: 2.4rem;
     font-weight: 700;
-    color: #8F0B13;
+    color: #B6410F;
     line-height: 1;
     margin-bottom: 6px;
 }
 
 .stat-label {
     font-size: 0.7rem;
-    color: #4C4F54;
+    color: #104C64;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
@@ -343,7 +343,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: rgba(56, 15, 23, 0.15) transparent;
+    scrollbar-color: rgba(192, 117, 77, 0.2) transparent;
     padding: 6px 4px 20px;
 }
 
@@ -356,21 +356,21 @@ body {
 }
 
 .exp-track::-webkit-scrollbar-thumb {
-    background: rgba(56, 15, 23, 0.15);
+    background: rgba(192, 117, 77, 0.2);
 }
 
 .exp-panel {
     min-width: 380px;
     max-width: 400px;
-    background: #EFDFC5;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    background: #C6C6D0;
+    border: 1px solid rgba(192, 117, 77, 0.15);
     flex-shrink: 0;
     scroll-snap-align: start;
     transition: all 0.3s;
 }
 
 .exp-panel:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .exp-panel-img {
@@ -380,7 +380,7 @@ body {
     justify-content: center;
     min-height: 200px;
     background: #fff;
-    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
+    border-bottom: 1px solid rgba(192, 117, 77, 0.1);
 }
 
 .exp-panel-img img {
@@ -399,7 +399,7 @@ body {
     display: inline-block;
     font-size: 0.6rem;
     font-weight: 600;
-    color: #8F0B13;
+    color: #B6410F;
     border: 1px solid rgba(143, 11, 19, 0.2);
     padding: 4px 12px;
     letter-spacing: 1.5px;
@@ -410,14 +410,14 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #380F17;
+    color: #C0754D;
     margin-bottom: 2px;
     letter-spacing: 1px;
 }
 
 .exp-panel-body h4 {
     font-size: 0.85rem;
-    color: #380F17;
+    color: #D59D80;
     font-weight: 500;
     margin-bottom: 0;
     line-height: 1.4;
@@ -426,7 +426,7 @@ body {
 .exp-panel-loc {
     display: block;
     font-size: 0.65rem;
-    color: #4C4F54;
+    color: #104C64;
     font-weight: 400;
     margin-top: 2px;
     margin-bottom: 14px;
@@ -435,7 +435,7 @@ body {
 
 .exp-panel-desc {
     font-size: 0.82rem;
-    color: #4C4F54;
+    color: #104C64;
     line-height: 1.6;
     margin-bottom: 18px;
     font-weight: 300;
@@ -450,15 +450,15 @@ body {
 .exp-panel-date {
     font-size: 0.7rem;
     font-weight: 400;
-    color: #4C4F54;
-    border: 1px solid rgba(56, 15, 23, 0.1);
+    color: #104C64;
+    border: 1px solid rgba(192, 117, 77, 0.15);
     padding: 4px 12px;
 }
 
 .exp-panel-result {
     font-size: 0.7rem;
     font-weight: 500;
-    color: #8F0B13;
+    color: #B6410F;
     border: 1px solid rgba(143, 11, 19, 0.2);
     padding: 4px 12px;
 }
@@ -471,35 +471,35 @@ body {
 }
 
 .edu-card {
-    background: #EFDFC5;
+    background: #C6C6D0;
     padding: 32px 28px;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    border: 1px solid rgba(192, 117, 77, 0.15);
     transition: all 0.3s;
 }
 
 .edu-card:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .edu-card h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #380F17;
+    color: #C0754D;
     margin-bottom: 8px;
     line-height: 1.3;
 }
 
 .edu-institution {
     font-size: 0.8rem;
-    color: #380F17;
+    color: #D59D80;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
 .edu-status {
     font-size: 0.7rem;
-    color: #4C4F54;
+    color: #104C64;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -512,21 +512,21 @@ body {
 }
 
 .skill-category {
-    background: #EFDFC5;
+    background: #C6C6D0;
     padding: 28px;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    border: 1px solid rgba(192, 117, 77, 0.15);
     transition: all 0.3s;
 }
 
 .skill-category:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .skill-category h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: #8F0B13;
+    color: #B6410F;
     margin-bottom: 18px;
     letter-spacing: 0.5px;
 }
@@ -538,7 +538,7 @@ body {
 .skill-category li {
     padding: 5px 0;
     font-size: 0.82rem;
-    color: #4C4F54;
+    color: #104C64;
     font-weight: 300;
     position: relative;
     padding-left: 14px;
@@ -548,7 +548,7 @@ body {
     content: '—';
     position: absolute;
     left: 0;
-    color: rgba(56, 15, 23, 0.25);
+    color: rgba(192, 117, 77, 0.3);
 }
 
 /* Certificates */
@@ -559,7 +559,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: rgba(56, 15, 23, 0.15) transparent;
+    scrollbar-color: rgba(192, 117, 77, 0.2) transparent;
     padding: 6px 4px 20px;
     cursor: grab;
 }
@@ -573,21 +573,21 @@ body {
 }
 
 .cert-track::-webkit-scrollbar-thumb {
-    background: rgba(56, 15, 23, 0.15);
+    background: rgba(192, 117, 77, 0.2);
 }
 
 .cert-card {
     min-width: 260px;
     max-width: 260px;
-    background: #EFDFC5;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    background: #C6C6D0;
+    border: 1px solid rgba(192, 117, 77, 0.15);
     flex-shrink: 0;
     scroll-snap-align: start;
     transition: all 0.3s;
 }
 
 .cert-card:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .cert-logo-wrap {
@@ -597,7 +597,7 @@ body {
     justify-content: center;
     min-height: 130px;
     background: #fff;
-    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
+    border-bottom: 1px solid rgba(192, 117, 77, 0.1);
 }
 
 .cert-logo {
@@ -614,7 +614,7 @@ body {
     display: inline-block;
     font-size: 0.6rem;
     font-weight: 500;
-    color: #8F0B13;
+    color: #B6410F;
     border: 1px solid rgba(143, 11, 19, 0.2);
     padding: 3px 10px;
     letter-spacing: 1px;
@@ -624,7 +624,7 @@ body {
 .cert-body h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 0.85rem;
-    color: #380F17;
+    color: #C0754D;
     line-height: 1.3;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -633,7 +633,7 @@ body {
 
 .cert-brief {
     font-size: 0.75rem;
-    color: #4C4F54;
+    color: #104C64;
     line-height: 1.4;
     font-weight: 300;
 }
@@ -648,25 +648,25 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    background: #EFDFC5;
+    background: #C6C6D0;
     padding: 20px 24px;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    border: 1px solid rgba(192, 117, 77, 0.15);
     margin-bottom: 14px;
     transition: all 0.3s;
 }
 
 .achievement-item:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .achievement-item i {
     font-size: 1.2rem;
-    color: #8F0B13;
+    color: #B6410F;
 }
 
 .achievement-item p {
     font-size: 0.88rem;
-    color: #4C4F54;
+    color: #104C64;
     font-weight: 300;
 }
 
@@ -678,7 +678,7 @@ body {
 
 .contact-text {
     font-size: 0.95rem;
-    color: #4C4F54;
+    color: #104C64;
     margin-bottom: 40px;
     text-align: center;
     font-weight: 300;
@@ -692,20 +692,20 @@ body {
 }
 
 .contact-card {
-    background: #EFDFC5;
+    background: #C6C6D0;
     padding: 28px 20px;
     text-align: center;
-    border: 1px solid rgba(56, 15, 23, 0.12);
+    border: 1px solid rgba(192, 117, 77, 0.15);
     transition: all 0.3s;
 }
 
 .contact-card:hover {
-    border-color: #8F0B13;
+    border-color: #B6410F;
 }
 
 .contact-card i {
     font-size: 1.6rem;
-    color: #8F0B13;
+    color: #B6410F;
     margin-bottom: 14px;
 }
 
@@ -713,7 +713,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #380F17;
+    color: #C0754D;
     margin-bottom: 8px;
     letter-spacing: 0.5px;
 }
@@ -721,19 +721,19 @@ body {
 .contact-card a,
 .contact-card p {
     font-size: 0.78rem;
-    color: #4C4F54;
+    color: #104C64;
     text-decoration: none;
     font-weight: 300;
     transition: color 0.3s;
 }
 
 .contact-card a:hover {
-    color: #8F0B13;
+    color: #B6410F;
 }
 
 .contact-ref {
     font-size: 0.8rem;
-    color: #4C4F54;
+    color: #104C64;
     font-style: italic;
     text-align: center;
     font-weight: 300;
@@ -742,15 +742,15 @@ body {
 
 /* Footer */
 .footer {
-    background: #252B2B;
+    background: #104C64;
     padding: 40px 0;
     text-align: center;
-    border-top: 1px solid rgba(239, 223, 197, 0.1);
+    border-top: 1px solid rgba(198, 198, 208, 0.15);
 }
 
 .footer p {
     font-size: 0.75rem;
-    color: #EFDFC5;
+    color: #C6C6D0;
     margin-bottom: 14px;
     font-weight: 300;
     opacity: 0.7;
@@ -763,14 +763,14 @@ body {
 }
 
 .footer-links a {
-    color: #EFDFC5;
+    color: #C6C6D0;
     font-size: 1.1rem;
     opacity: 0.5;
     transition: all 0.3s;
 }
 
 .footer-links a:hover {
-    color: #8F0B13;
+    color: #B6410F;
     opacity: 1;
 }
 
@@ -790,7 +790,7 @@ body {
         left: -100%;
         width: 100%;
         height: calc(100vh - 64px);
-        background: rgba(239, 223, 197, 0.98);
+        background: rgba(198, 198, 208, 0.98);
         flex-direction: column;
         align-items: center;
         justify-content: center;
