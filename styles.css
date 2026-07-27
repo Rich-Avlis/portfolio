@@ -146,31 +146,53 @@ body {
                 radial-gradient(circle at 80% 50%, rgba(15, 52, 96, 0.1) 0%, transparent 50%);
 }
 
-.hero-content {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    padding: 20px;
-}
-
-.hero-image-wrapper {
-    margin-bottom: 30px;
-}
-
-.hero-image {
-    width: 140px;
-    height: 140px;
+.hero-split {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
     margin: 0 auto;
-    border-radius: 50%;
+    padding: 0 24px;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-photo-side {
+    flex: 0 0 420px;
+}
+
+.hero-photo-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
     overflow: hidden;
-    border: 4px solid rgba(255,255,255,0.2);
-    box-shadow: 0 0 40px rgba(0, 180, 216, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.hero-photo-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(135deg, rgba(0,180,216,0.15), rgba(15,52,96,0.25)),
+        linear-gradient(45deg, #2c3e50 0%, #34495e 30%, #4a6274 60%, #5d7a8a 100%);
+    z-index: 1;
 }
 
 .hero-photo {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
+    mix-blend-mode: luminosity;
+    opacity: 0.9;
+}
+
+.hero-text-side {
+    flex: 1;
+    min-width: 0;
 }
 
 .hero-title {
@@ -195,11 +217,18 @@ body {
     margin-bottom: 25px;
 }
 
+.hero-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #00b4d8, transparent);
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
 .hero-links {
     display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-bottom: 40px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .hero-link {
@@ -809,6 +838,25 @@ body {
         display: flex;
     }
 
+    .hero-split {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-photo-side {
+        flex: 0 0 auto;
+        width: 280px;
+    }
+
+    .hero-divider {
+        margin: 0 auto 25px;
+    }
+
+    .hero-links {
+        justify-content: center;
+    }
+
     .hero-title {
         font-size: 2.2rem;
     }
@@ -862,6 +910,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero-photo-side {
+        width: 220px;
+    }
+
     .cert-grid {
         grid-template-columns: 1fr;
     }
