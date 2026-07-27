@@ -12,14 +12,14 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #252B2B;
-    color: #e8e4da;
+    background: #EFDFC5;
+    color: #4C4F54;
     line-height: 1.6;
 }
 
 ::selection {
-    background: rgba(239, 223, 197, 0.3);
-    color: #fff;
+    background: rgba(143, 11, 19, 0.15);
+    color: #380F17;
 }
 
 /* Navbar */
@@ -28,9 +28,9 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(14, 13, 13, 0.92);
+    background: rgba(239, 223, 197, 0.92);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(143, 11, 19, 0.08);
+    border-bottom: 1px solid rgba(56, 15, 23, 0.1);
 }
 
 .nav-container {
@@ -47,7 +47,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #8F0B13;
+    color: #380F17;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-link {
-    color: rgba(232, 228, 218, 0.7);
+    color: #4C4F54;
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
@@ -102,7 +102,7 @@ body {
     display: block;
     width: 24px;
     height: 1.5px;
-    background: rgba(232, 228, 218, 0.7);
+    background: #4C4F54;
     transition: 0.3s;
 }
 
@@ -121,8 +121,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 30% 20%, rgba(143, 11, 19, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 80%, rgba(56, 15, 23, 0.15) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 20%, rgba(143, 11, 19, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(56, 15, 23, 0.2) 0%, transparent 50%);
 }
 
 .hero-content {
@@ -140,13 +140,13 @@ body {
     height: 100px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 2px solid rgba(143, 11, 19, 0.3);
+    border: 2px solid rgba(239, 223, 197, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
-    color: #8F0B13;
-    background: rgba(143, 11, 19, 0.08);
+    color: #EFDFC5;
+    background: rgba(239, 223, 197, 0.06);
 }
 
 .hero-label {
@@ -163,7 +163,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 5.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #EFDFC5;
     margin-bottom: 8px;
     line-height: 1.05;
     letter-spacing: -1px;
@@ -172,7 +172,7 @@ body {
 .hero-subtitle {
     font-size: 1rem;
     font-weight: 300;
-    color: rgba(232, 228, 218, 0.6);
+    color: rgba(239, 223, 197, 0.6);
     margin-bottom: 6px;
     letter-spacing: 2px;
 }
@@ -187,7 +187,7 @@ body {
 .hero-divider {
     width: 60px;
     height: 1px;
-    background: rgba(239, 223, 197, 0.3);
+    background: rgba(239, 223, 197, 0.2);
     margin: 0 auto 28px;
 }
 
@@ -202,11 +202,11 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 1px solid rgba(143, 11, 19, 0.2);
+    border: 1px solid rgba(239, 223, 197, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(232, 228, 218, 0.5);
+    color: rgba(239, 223, 197, 0.5);
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.3s;
@@ -224,7 +224,7 @@ body {
     gap: 8px;
     padding: 12px 32px;
     border: 1px solid rgba(239, 223, 197, 0.2);
-    color: rgba(232, 228, 218, 0.8);
+    color: rgba(239, 223, 197, 0.8);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 500;
@@ -241,7 +241,7 @@ body {
 /* Section base */
 .section {
     padding: 100px 0;
-    border-bottom: 1px solid rgba(143, 11, 19, 0.1);
+    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
 }
 
 .container {
@@ -268,7 +268,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 2.8rem;
     font-weight: 600;
-    color: #fff;
+    color: #380F17;
     letter-spacing: -0.5px;
     line-height: 1.1;
 }
@@ -286,7 +286,7 @@ body {
 
 .about-content p {
     font-size: 0.92rem;
-    color: rgba(232, 228, 218, 0.7);
+    color: #4C4F54;
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 300;
@@ -297,7 +297,7 @@ body {
 }
 
 .about-content strong {
-    color: #EFDFC5;
+    color: #380F17;
     font-weight: 500;
 }
 
@@ -312,8 +312,8 @@ body {
 .stat {
     text-align: center;
     padding: 20px 28px;
-    border: 1px solid rgba(143, 11, 19, 0.15);
-    background: #380F17;
+    border: 1px solid rgba(56, 15, 23, 0.12);
+    background: #EFDFC5;
     min-width: 120px;
 }
 
@@ -329,13 +329,13 @@ body {
 
 .stat-label {
     font-size: 0.7rem;
-    color: rgba(239, 223, 197, 0.5);
+    color: #4C4F54;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
-/* Experience Bento */
+/* Experience */
 .exp-track {
     display: flex;
     gap: 20px;
@@ -343,7 +343,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: rgba(143, 11, 19, 0.2) transparent;
+    scrollbar-color: rgba(56, 15, 23, 0.15) transparent;
     padding: 6px 4px 20px;
 }
 
@@ -356,14 +356,14 @@ body {
 }
 
 .exp-track::-webkit-scrollbar-thumb {
-    background: rgba(143, 11, 19, 0.2);
+    background: rgba(56, 15, 23, 0.15);
 }
 
 .exp-panel {
     min-width: 380px;
     max-width: 400px;
-    background: #380F17;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    background: #EFDFC5;
+    border: 1px solid rgba(56, 15, 23, 0.12);
     flex-shrink: 0;
     scroll-snap-align: start;
     transition: all 0.3s;
@@ -380,7 +380,7 @@ body {
     justify-content: center;
     min-height: 200px;
     background: #fff;
-    border-bottom: 1px solid rgba(143, 11, 19, 0.1);
+    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
 }
 
 .exp-panel-img img {
@@ -399,8 +399,8 @@ body {
     display: inline-block;
     font-size: 0.6rem;
     font-weight: 600;
-    color: rgba(239, 223, 197, 0.6);
-    border: 1px solid rgba(143, 11, 19, 0.25);
+    color: #8F0B13;
+    border: 1px solid rgba(143, 11, 19, 0.2);
     padding: 4px 12px;
     letter-spacing: 1.5px;
     margin-bottom: 12px;
@@ -410,14 +410,14 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: #380F17;
     margin-bottom: 2px;
     letter-spacing: 1px;
 }
 
 .exp-panel-body h4 {
     font-size: 0.85rem;
-    color: rgba(239, 223, 197, 0.7);
+    color: #380F17;
     font-weight: 500;
     margin-bottom: 0;
     line-height: 1.4;
@@ -426,7 +426,7 @@ body {
 .exp-panel-loc {
     display: block;
     font-size: 0.65rem;
-    color: rgba(232, 228, 218, 0.35);
+    color: #4C4F54;
     font-weight: 400;
     margin-top: 2px;
     margin-bottom: 14px;
@@ -435,7 +435,7 @@ body {
 
 .exp-panel-desc {
     font-size: 0.82rem;
-    color: rgba(232, 228, 218, 0.55);
+    color: #4C4F54;
     line-height: 1.6;
     margin-bottom: 18px;
     font-weight: 300;
@@ -450,20 +450,20 @@ body {
 .exp-panel-date {
     font-size: 0.7rem;
     font-weight: 400;
-    color: rgba(232, 228, 218, 0.35);
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    color: #4C4F54;
+    border: 1px solid rgba(56, 15, 23, 0.1);
     padding: 4px 12px;
 }
 
 .exp-panel-result {
     font-size: 0.7rem;
     font-weight: 500;
-    color: rgba(239, 223, 197, 0.7);
-    border: 1px solid rgba(143, 11, 19, 0.25);
+    color: #8F0B13;
+    border: 1px solid rgba(143, 11, 19, 0.2);
     padding: 4px 12px;
 }
 
-/* Education Bento */
+/* Education */
 .edu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -471,9 +471,9 @@ body {
 }
 
 .edu-card {
-    background: #380F17;
+    background: #EFDFC5;
     padding: 32px 28px;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    border: 1px solid rgba(56, 15, 23, 0.12);
     transition: all 0.3s;
 }
 
@@ -485,26 +485,26 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #fff;
+    color: #380F17;
     margin-bottom: 8px;
     line-height: 1.3;
 }
 
 .edu-institution {
     font-size: 0.8rem;
-    color: rgba(239, 223, 197, 0.6);
+    color: #380F17;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
 .edu-status {
     font-size: 0.7rem;
-    color: rgba(232, 228, 218, 0.35);
+    color: #4C4F54;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
 
-/* Skills Bento */
+/* Skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -512,9 +512,9 @@ body {
 }
 
 .skill-category {
-    background: #380F17;
+    background: #EFDFC5;
     padding: 28px;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    border: 1px solid rgba(56, 15, 23, 0.12);
     transition: all 0.3s;
 }
 
@@ -526,7 +526,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    
+    color: #8F0B13;
     margin-bottom: 18px;
     letter-spacing: 0.5px;
 }
@@ -538,7 +538,7 @@ body {
 .skill-category li {
     padding: 5px 0;
     font-size: 0.82rem;
-    color: rgba(232, 228, 218, 0.55);
+    color: #4C4F54;
     font-weight: 300;
     position: relative;
     padding-left: 14px;
@@ -548,7 +548,7 @@ body {
     content: '—';
     position: absolute;
     left: 0;
-    color: rgba(239, 223, 197, 0.3);
+    color: rgba(56, 15, 23, 0.25);
 }
 
 /* Certificates */
@@ -559,7 +559,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: rgba(143, 11, 19, 0.2) transparent;
+    scrollbar-color: rgba(56, 15, 23, 0.15) transparent;
     padding: 6px 4px 20px;
     cursor: grab;
 }
@@ -573,14 +573,14 @@ body {
 }
 
 .cert-track::-webkit-scrollbar-thumb {
-    background: rgba(143, 11, 19, 0.2);
+    background: rgba(56, 15, 23, 0.15);
 }
 
 .cert-card {
     min-width: 260px;
     max-width: 260px;
-    background: #380F17;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    background: #EFDFC5;
+    border: 1px solid rgba(56, 15, 23, 0.12);
     flex-shrink: 0;
     scroll-snap-align: start;
     transition: all 0.3s;
@@ -597,7 +597,7 @@ body {
     justify-content: center;
     min-height: 130px;
     background: #fff;
-    border-bottom: 1px solid rgba(143, 11, 19, 0.1);
+    border-bottom: 1px solid rgba(56, 15, 23, 0.08);
 }
 
 .cert-logo {
@@ -624,7 +624,7 @@ body {
 .cert-body h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 0.85rem;
-    color: #fff;
+    color: #380F17;
     line-height: 1.3;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -633,7 +633,7 @@ body {
 
 .cert-brief {
     font-size: 0.75rem;
-    color: rgba(232, 228, 218, 0.45);
+    color: #4C4F54;
     line-height: 1.4;
     font-weight: 300;
 }
@@ -648,9 +648,9 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    background: #380F17;
+    background: #EFDFC5;
     padding: 20px 24px;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    border: 1px solid rgba(56, 15, 23, 0.12);
     margin-bottom: 14px;
     transition: all 0.3s;
 }
@@ -666,7 +666,7 @@ body {
 
 .achievement-item p {
     font-size: 0.88rem;
-    color: rgba(232, 228, 218, 0.6);
+    color: #4C4F54;
     font-weight: 300;
 }
 
@@ -678,7 +678,7 @@ body {
 
 .contact-text {
     font-size: 0.95rem;
-    color: rgba(232, 228, 218, 0.5);
+    color: #4C4F54;
     margin-bottom: 40px;
     text-align: center;
     font-weight: 300;
@@ -692,10 +692,10 @@ body {
 }
 
 .contact-card {
-    background: #380F17;
+    background: #EFDFC5;
     padding: 28px 20px;
     text-align: center;
-    border: 1px solid rgba(239, 223, 197, 0.08);
+    border: 1px solid rgba(56, 15, 23, 0.12);
     transition: all 0.3s;
 }
 
@@ -705,7 +705,7 @@ body {
 
 .contact-card i {
     font-size: 1.6rem;
-    color: rgba(239, 223, 197, 0.4);
+    color: #8F0B13;
     margin-bottom: 14px;
 }
 
@@ -713,7 +713,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #fff;
+    color: #380F17;
     margin-bottom: 8px;
     letter-spacing: 0.5px;
 }
@@ -721,22 +721,23 @@ body {
 .contact-card a,
 .contact-card p {
     font-size: 0.78rem;
-    color: rgba(232, 228, 218, 0.5);
+    color: #4C4F54;
     text-decoration: none;
     font-weight: 300;
     transition: color 0.3s;
 }
 
 .contact-card a:hover {
-    
+    color: #8F0B13;
 }
 
 .contact-ref {
     font-size: 0.8rem;
-    color: rgba(232, 228, 218, 0.3);
+    color: #4C4F54;
     font-style: italic;
     text-align: center;
     font-weight: 300;
+    opacity: 0.6;
 }
 
 /* Footer */
@@ -744,14 +745,15 @@ body {
     background: #252B2B;
     padding: 40px 0;
     text-align: center;
-    border-top: 1px solid rgba(239, 223, 197, 0.06);
+    border-top: 1px solid rgba(239, 223, 197, 0.1);
 }
 
 .footer p {
     font-size: 0.75rem;
-    color: rgba(232, 228, 218, 0.25);
+    color: #EFDFC5;
     margin-bottom: 14px;
     font-weight: 300;
+    opacity: 0.7;
 }
 
 .footer-links {
@@ -761,13 +763,15 @@ body {
 }
 
 .footer-links a {
-    color: rgba(232, 228, 218, 0.2);
+    color: #EFDFC5;
     font-size: 1.1rem;
-    transition: color 0.3s;
+    opacity: 0.5;
+    transition: all 0.3s;
 }
 
 .footer-links a:hover {
-    
+    color: #8F0B13;
+    opacity: 1;
 }
 
 /* Responsive */
@@ -786,7 +790,7 @@ body {
         left: -100%;
         width: 100%;
         height: calc(100vh - 64px);
-        background: rgba(14, 13, 13, 0.98);
+        background: rgba(239, 223, 197, 0.98);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -854,5 +858,4 @@ body {
     .hero-title {
         font-size: 2.4rem;
     }
-
 }
