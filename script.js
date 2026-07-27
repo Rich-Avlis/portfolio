@@ -31,8 +31,8 @@ const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
-        navbar.style.background = 'rgba(26, 26, 46, 0.98)';
+        navbar.style.background = 'rgba(10, 26, 18, 0.98)';
     } else {
-        navbar.style.background = 'rgba(26, 26, 46, 0.95)';
+        navbar.style.background = 'rgba(10, 26, 18, 0.95)';
     }
 });
