@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -526,7 +526,7 @@ body {
 }
 
 .skill-category li::before {
-    content: 'Ôû©';
+    content: '▸';
     position: absolute;
     left: 0;
     color: #00b4d8;
