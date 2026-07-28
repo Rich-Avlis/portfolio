@@ -405,8 +405,8 @@ body {
 }
 
 .exp-panel-img img {
-    width: 100px;
-    height: 100px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
 }
 
@@ -484,8 +484,8 @@ body {
     }
 
     .exp-panel-img img {
-        width: 80px;
-        height: 80px;
+        width: 220px;
+        height: 220px;
     }
 
     .exp-panel-body {
