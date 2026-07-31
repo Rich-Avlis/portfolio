@@ -27,9 +27,14 @@ body {
 .page-video-wrap {
     position: fixed;
     inset: 0;
-    z-index: -2;
+    z-index: 0;
     overflow: hidden;
     background: #0a1a12;
+}
+
+body > :not(.page-video-wrap):not(#navbar) {
+    position: relative;
+    z-index: 1;
 }
 
 .page-video {

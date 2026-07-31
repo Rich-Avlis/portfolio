@@ -69,4 +69,13 @@ if (pageVideo) {
             if (p) p.catch(() => {});
         }
     });
+
+    ['touchstart', 'click'].forEach(evt => {
+        document.addEventListener(evt, () => {
+            if (pageVideo.paused) {
+                const p = pageVideo.play();
+                if (p) p.catch(() => {});
+            }
+        }, { passive: true });
+    });
 }
