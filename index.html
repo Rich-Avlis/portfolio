@@ -8,15 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
-<div class="page-video-wrap">
-    <video class="page-video" autoplay muted loop playsinline webkit-playsinline preload="auto" disableRemotePlayback controlslist="nodownload noplaybackrate noremoteplayback" aria-hidden="true">
-        <source src="fondo.mp4" type="video/mp4">
-    </video>
-</div>
+<canvas id="pageCanvas" class="page-canvas" aria-hidden="true"></canvas>
+<video id="bgVideo" class="bg-video" muted loop playsinline webkit-playsinline preload="auto">
+    <source src="fondo.mp4" type="video/mp4">
+</video>
 
 <nav class="navbar" id="navbar">
     <div class="nav-container">
