@@ -36,3 +36,25 @@ window.addEventListener('scroll', () => {
         navbar.style.background = 'rgba(255, 255, 255, 0.05)';
     }
 });
+
+const pageVideo = document.querySelector('.page-video');
+if (pageVideo) {
+    pageVideo.muted = true;
+    pageVideo.defaultMuted = true;
+    const startPlay = pageVideo.play();
+    if (startPlay) startPlay.catch(() => {});
+
+    pageVideo.addEventListener('ended', () => {
+        pageVideo.playbackRate = -1;
+        const p = pageVideo.play();
+        if (p) p.catch(() => {});
+    });
+
+    pageVideo.addEventListener('timeupdate', () => {
+        if (pageVideo.currentTime <= 0.05 && pageVideo.playbackRate < 0) {
+            pageVideo.playbackRate = 1;
+            const p = pageVideo.play();
+            if (p) p.catch(() => {});
+        }
+    });
+}

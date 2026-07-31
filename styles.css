@@ -31,6 +31,15 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -2;
+    pointer-events: none;
+}
+
+.page-video::-webkit-media-controls,
+.page-video::-webkit-media-controls-start-playback-button,
+.page-video::-webkit-media-controls-panel,
+.page-video::-webkit-media-controls-overlay-play-button {
+    display: none !important;
+    -webkit-appearance: none;
 }
 
 body::before,
