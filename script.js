@@ -44,6 +44,11 @@ if (pageVideo) {
     const startPlay = pageVideo.play();
     if (startPlay) startPlay.catch(() => {});
 
+    pageVideo.addEventListener('loadedmetadata', () => {
+        const p = pageVideo.play();
+        if (p) p.catch(() => {});
+    });
+
     pageVideo.addEventListener('ended', () => {
         pageVideo.playbackRate = -1;
         const p = pageVideo.play();
@@ -53,6 +58,13 @@ if (pageVideo) {
     pageVideo.addEventListener('timeupdate', () => {
         if (pageVideo.currentTime <= 0.05 && pageVideo.playbackRate < 0) {
             pageVideo.playbackRate = 1;
+            const p = pageVideo.play();
+            if (p) p.catch(() => {});
+        }
+    });
+
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden && pageVideo.paused) {
             const p = pageVideo.play();
             if (p) p.catch(() => {});
         }
